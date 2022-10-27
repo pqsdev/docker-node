@@ -1,3 +1,3 @@
-FROM node:16-alpine
+FROM node:19-alpine
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD [ "node" ]
