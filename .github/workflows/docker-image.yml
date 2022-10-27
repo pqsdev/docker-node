@@ -1,6 +1,5 @@
 name: NODEJS 16 Docker Image CI
 
-on:[]
 
 jobs:
   build:
@@ -9,7 +8,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-
     - name: Build Image
       id: build-image
       uses: redhat-actions/buildah-build@v2
