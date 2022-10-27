@@ -1,0 +1,20 @@
+name: NODEJS 16 Docker Image CI
+
+on:[]
+
+jobs:
+  build:
+    name: Build and push image
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build Image
+      id: build-image
+      uses: redhat-actions/buildah-build@v2
+      with:
+        image: quay.io/pqsdev/nodejs
+        tags: 16 
+        containerfiles: |
+          ./16/alpine3.16/Dockerfile
