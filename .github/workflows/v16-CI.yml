@@ -12,7 +12,7 @@ jobs:
         id: build-image
         uses: redhat-actions/buildah-build@v2
         with:
-          image: quay.io/pqsdev/nodejs
+          image: nodejs
           tags: 16
           containerfiles: |
             ./16/alpine3.16/Dockerfile
