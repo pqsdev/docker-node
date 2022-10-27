@@ -1,6 +1,11 @@
 name: NODEJS 16 Docker Image CI
 
-
+on:
+  push:
+    branches:
+      - 'MAIN'
+    paths:
+      - '**Dockerfile'
 jobs:
   build:
     name: Build and push image
