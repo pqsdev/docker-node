@@ -1,11 +1,6 @@
 name: NODEJS 16 Docker Image CI
 
-on:
-  push:
-    branches:
-      - 'MAIN'
-    paths:
-      - '**Dockerfile'
+on: workflow_dispatch
 jobs:
   build:
     name: Build and push image
